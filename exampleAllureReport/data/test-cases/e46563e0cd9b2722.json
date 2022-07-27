@@ -1,0 +1,466 @@
+{
+  "uid" : "e46563e0cd9b2722",
+  "name" : "Insert full data",
+  "fullName" : "pl.databucket.api.tests.creation.DataCreationTest.insertFullDataTest",
+  "historyId" : "e3ffd3a0fa6be08c7c4b900db8eba12b",
+  "time" : {
+    "start" : 1658915681024,
+    "stop" : 1658915681442,
+    "duration" : 418
+  },
+  "description" : "We expect to have as a result a data with all fields filled up.",
+  "descriptionHtml" : "<p>We expect to have as a result a data with all fields filled up.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "beforeAll",
+    "time" : {
+      "start" : 1658915675025,
+      "stop" : 1658915680099,
+      "duration" : 5074
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "We expect to have as a result a data with all fields filled up.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given the full data",
+      "time" : {
+        "start" : 1658915681040,
+        "stop" : 1658915681040,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "When insert data into the bucket",
+      "time" : {
+        "start" : 1658915681040,
+        "stop" : 1658915681425,
+        "duration" : 385
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Insert data",
+        "time" : {
+          "start" : 1658915681409,
+          "stop" : 1658915681425,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "c263d883a6881997",
+          "name" : "Request headers",
+          "source" : "c263d883a6881997.txt",
+          "type" : "text/plain",
+          "size" : 77
+        }, {
+          "uid" : "af830204b076c0d5",
+          "name" : "POST https://databucket.pl/app/api/bucket/dev-users",
+          "source" : "af830204b076c0d5.txt",
+          "type" : "application/json",
+          "size" : 157
+        }, {
+          "uid" : "c03e94d9f5d30826",
+          "name" : "Response headers",
+          "source" : "c03e94d9f5d30826.txt",
+          "type" : "text/plain",
+          "size" : 909
+        }, {
+          "uid" : "5ea7780175ecd99e",
+          "name" : "Response received in 369 ms with status: 201",
+          "source" : "5ea7780175ecd99e.txt",
+          "type" : "application/json",
+          "size" : 341
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 4,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Then the response is correct",
+      "time" : {
+        "start" : 1658915681425,
+        "stop" : 1658915681442,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Response - verification",
+        "time" : {
+          "start" : 1658915681425,
+          "stop" : 1658915681425,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Response status is 201",
+          "time" : {
+            "start" : 1658915681425,
+            "stop" : 1658915681425,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "Response content type is application/json",
+          "time" : {
+            "start" : 1658915681425,
+            "stop" : 1658915681425,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      }, {
+        "name" : "Response body - verification",
+        "time" : {
+          "start" : 1658915681425,
+          "stop" : 1658915681425,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "id is true",
+          "time" : {
+            "start" : 1658915681425,
+            "stop" : 1658915681425,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "tagId is 1",
+          "time" : {
+            "start" : 1658915681425,
+            "stop" : 1658915681425,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "reserved is true",
+          "time" : {
+            "start" : 1658915681425,
+            "stop" : 1658915681425,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "owner is api-tester",
+          "time" : {
+            "start" : 1658915681425,
+            "stop" : 1658915681425,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "properties is {intItem=15.0, floatItem=10.01, stringItem=Some text, booleanItem=true}",
+          "time" : {
+            "start" : 1658915681425,
+            "stop" : 1658915681425,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "createdBy is api-tester",
+          "time" : {
+            "start" : 1658915681425,
+            "stop" : 1658915681425,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "createdAt is Wed Jul 27 09:54:41 CEST 2022",
+          "time" : {
+            "start" : 1658915681425,
+            "stop" : 1658915681425,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "modifiedBy is api-tester",
+          "time" : {
+            "start" : 1658915681425,
+            "stop" : 1658915681425,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "modifiedAt is Wed Jul 27 09:54:41 CEST 2022",
+          "time" : {
+            "start" : 1658915681425,
+            "stop" : 1658915681425,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 9,
+        "hasContent" : true
+      }, {
+        "name" : "Response body properties - verification",
+        "time" : {
+          "start" : 1658915681425,
+          "stop" : 1658915681442,
+          "duration" : 17
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$.booleanItem is true",
+          "time" : {
+            "start" : 1658915681425,
+            "stop" : 1658915681425,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "$.stringItem is Some text",
+          "time" : {
+            "start" : 1658915681425,
+            "stop" : 1658915681425,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "$.intItem is 15",
+          "time" : {
+            "start" : 1658915681425,
+            "stop" : 1658915681441,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "$.floatItem is 10.01",
+          "time" : {
+            "start" : 1658915681441,
+            "stop" : 1658915681441,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        }, {
+          "name" : "$.nullItem is null",
+          "time" : {
+            "start" : 1658915681442,
+            "stop" : 1658915681442,
+            "duration" : 0
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 5,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 19,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 23,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "data"
+  }, {
+    "name" : "tag",
+    "value" : "regression"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:pl.databucket.api.tests.creation.DataCreationTest]/[method:insertFullDataTest()]"
+  }, {
+    "name" : "host",
+    "value" : "QH-WIN-KSL"
+  }, {
+    "name" : "thread",
+    "value" : "16112@QH-WIN-KSL.ForkJoinPool-1-worker-5(19)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "pl.databucket.api.tests.creation.DataCreationTest"
+  }, {
+    "name" : "testClass",
+    "value" : "pl.databucket.api.tests.creation.DataCreationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "insertFullDataTest"
+  }, {
+    "name" : "suite",
+    "value" : "Data creation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "data", "regression" ]
+  },
+  "source" : "e46563e0cd9b2722.json",
+  "parameterValues" : [ ]
+}

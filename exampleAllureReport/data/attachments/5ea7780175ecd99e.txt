@@ -1,0 +1,16 @@
+{
+  "id": 535,
+  "tagId": 1,
+  "reserved": true,
+  "owner": "api-tester",
+  "properties": {
+    "intItem": 15,
+    "floatItem": 10.01,
+    "stringItem": "Some text",
+    "booleanItem": true
+  },
+  "createdBy": "api-tester",
+  "createdAt": "2022-07-27T09:54:41.285Z",
+  "modifiedBy": "api-tester",
+  "modifiedAt": "2022-07-27T09:54:41.285Z"
+}

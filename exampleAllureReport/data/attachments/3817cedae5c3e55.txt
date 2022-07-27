@@ -1,0 +1,11 @@
+{
+  "id": 534,
+  "tagId": null,
+  "reserved": false,
+  "owner": null,
+  "properties": null,
+  "createdBy": "api-tester",
+  "createdAt": "2022-07-27T09:54:40.163Z",
+  "modifiedBy": "api-tester",
+  "modifiedAt": "2022-07-27T09:54:40.163Z"
+}

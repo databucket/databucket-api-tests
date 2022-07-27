@@ -1,0 +1,182 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "pl.databucket.api.tests",
+    "children" : [ {
+      "name" : "examples",
+      "children" : [ {
+        "name" : "SkippedTest",
+        "children" : [ {
+          "name" : "abortedTest",
+          "uid" : "c5f09d26959919e9",
+          "parentUid" : "6f2e023d3b33435b4bd25468bf1a31bb",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1658915675122,
+            "stop" : 1658915675129,
+            "duration" : 7
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "skippedTest",
+          "uid" : "61beaf0af0fc3550",
+          "parentUid" : "6f2e023d3b33435b4bd25468bf1a31bb",
+          "status" : "skipped",
+          "time" : {
+            "start" : 1658915675344,
+            "stop" : 1658915675344,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "6f2e023d3b33435b4bd25468bf1a31bb"
+      }, {
+        "name" : "WaitAssertionsTest",
+        "children" : [ {
+          "name" : "waitAssertionOptionalTest",
+          "uid" : "6c068936b8d082f8",
+          "parentUid" : "0132899f44a396db9d42604ac14bb05a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1658915677162,
+            "stop" : 1658915717387,
+            "duration" : 40225
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "waitAssertionTest",
+          "uid" : "766052b3e858c506",
+          "parentUid" : "0132899f44a396db9d42604ac14bb05a",
+          "status" : "failed",
+          "time" : {
+            "start" : 1658915678618,
+            "stop" : 1658915738717,
+            "duration" : 60099
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "0132899f44a396db9d42604ac14bb05a"
+      }, {
+        "name" : "SoftAssertionsTest",
+        "children" : [ {
+          "name" : "customSoftAssertionsTest",
+          "uid" : "2b0967692d48a0f4",
+          "parentUid" : "ca59eaf1cb630c96f6e8b46fb06dac88",
+          "status" : "failed",
+          "time" : {
+            "start" : 1658915678418,
+            "stop" : 1658915678503,
+            "duration" : 85
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "customSoftAssertionsStepTest",
+          "uid" : "e46cd34b8dc1b2ba",
+          "parentUid" : "ca59eaf1cb630c96f6e8b46fb06dac88",
+          "status" : "failed",
+          "time" : {
+            "start" : 1658915678519,
+            "stop" : 1658915678534,
+            "duration" : 15
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "nativeSoftAssertionsTest",
+          "uid" : "33ceb859dd7147ed",
+          "parentUid" : "ca59eaf1cb630c96f6e8b46fb06dac88",
+          "status" : "failed",
+          "time" : {
+            "start" : 1658915678550,
+            "stop" : 1658915678565,
+            "duration" : 15
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ca59eaf1cb630c96f6e8b46fb06dac88"
+      } ],
+      "uid" : "f237b780edc9c54ecc793e76c4fbbb4a"
+    }, {
+      "name" : "creation.DataCreationTest",
+      "children" : [ {
+        "name" : "insertEmptyDataTest",
+        "uid" : "23a570e33d1959d9",
+        "parentUid" : "b08ed8aa7221b93b167bac0bf8b5b0ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1658915680099,
+          "stop" : 1658915681009,
+          "duration" : 910
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "insertFullDataTest",
+        "uid" : "e46563e0cd9b2722",
+        "parentUid" : "b08ed8aa7221b93b167bac0bf8b5b0ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1658915681024,
+          "stop" : 1658915681442,
+          "duration" : 418
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "creation.DataCreationTest"
+    } ],
+    "uid" : "pl.databucket.api.tests"
+  } ]
+}

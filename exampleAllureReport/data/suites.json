@@ -1,0 +1,174 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Skipped scenarios",
+    "children" : [ {
+      "name" : "Do not execute! - aborted test",
+      "uid" : "c5f09d26959919e9",
+      "parentUid" : "edde819cbce78bac56ee3cef95e02d40",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1658915675122,
+        "stop" : 1658915675129,
+        "duration" : 7
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Do not execute! - skipped test",
+      "uid" : "61beaf0af0fc3550",
+      "parentUid" : "edde819cbce78bac56ee3cef95e02d40",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1658915675344,
+        "stop" : 1658915675344,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "edde819cbce78bac56ee3cef95e02d40"
+  }, {
+    "name" : "Wait assertions",
+    "children" : [ {
+      "name" : "Wait assertion optional",
+      "uid" : "6c068936b8d082f8",
+      "parentUid" : "2d6a2f766ab813edd0f7cbdc56b73875",
+      "status" : "passed",
+      "time" : {
+        "start" : 1658915677162,
+        "stop" : 1658915717387,
+        "duration" : 40225
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Wait assertion",
+      "uid" : "766052b3e858c506",
+      "parentUid" : "2d6a2f766ab813edd0f7cbdc56b73875",
+      "status" : "failed",
+      "time" : {
+        "start" : 1658915678618,
+        "stop" : 1658915738717,
+        "duration" : 60099
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2d6a2f766ab813edd0f7cbdc56b73875"
+  }, {
+    "name" : "Custom assertions",
+    "children" : [ {
+      "name" : "Soft assertions - custom",
+      "uid" : "2b0967692d48a0f4",
+      "parentUid" : "2a87144c426e7eddfa7d6379828f4a4e",
+      "status" : "failed",
+      "time" : {
+        "start" : 1658915678418,
+        "stop" : 1658915678503,
+        "duration" : 85
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Soft assertions - custom (as nested step)",
+      "uid" : "e46cd34b8dc1b2ba",
+      "parentUid" : "2a87144c426e7eddfa7d6379828f4a4e",
+      "status" : "failed",
+      "time" : {
+        "start" : 1658915678519,
+        "stop" : 1658915678534,
+        "duration" : 15
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Soft assertions - native",
+      "uid" : "33ceb859dd7147ed",
+      "parentUid" : "2a87144c426e7eddfa7d6379828f4a4e",
+      "status" : "failed",
+      "time" : {
+        "start" : 1658915678550,
+        "stop" : 1658915678565,
+        "duration" : 15
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2a87144c426e7eddfa7d6379828f4a4e"
+  }, {
+    "name" : "Data creation",
+    "children" : [ {
+      "name" : "Insert empty data",
+      "uid" : "23a570e33d1959d9",
+      "parentUid" : "202d7148412b21f1374037403072e50c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1658915680099,
+        "stop" : 1658915681009,
+        "duration" : 910
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Insert full data",
+      "uid" : "e46563e0cd9b2722",
+      "parentUid" : "202d7148412b21f1374037403072e50c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1658915681024,
+        "stop" : 1658915681442,
+        "duration" : 418
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "202d7148412b21f1374037403072e50c"
+  } ]
+}

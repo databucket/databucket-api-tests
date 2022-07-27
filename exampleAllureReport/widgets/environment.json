@@ -1,0 +1,13 @@
+[ {
+  "values" : [ "3" ],
+  "name" : "Threads"
+}, {
+  "values" : [ "0" ],
+  "name" : "Max retries"
+}, {
+  "values" : [ "dev" ],
+  "name" : "Environment"
+}, {
+  "values" : [ "20" ],
+  "name" : "Max failures"
+} ]

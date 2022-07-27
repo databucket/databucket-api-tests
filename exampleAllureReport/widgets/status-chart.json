@@ -1,0 +1,91 @@
+[ {
+  "uid" : "c5f09d26959919e9",
+  "name" : "Do not execute! - aborted test",
+  "time" : {
+    "start" : 1658915675122,
+    "stop" : 1658915675129,
+    "duration" : 7
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "2b0967692d48a0f4",
+  "name" : "Soft assertions - custom",
+  "time" : {
+    "start" : 1658915678418,
+    "stop" : 1658915678503,
+    "duration" : 85
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "e46563e0cd9b2722",
+  "name" : "Insert full data",
+  "time" : {
+    "start" : 1658915681024,
+    "stop" : 1658915681442,
+    "duration" : 418
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "23a570e33d1959d9",
+  "name" : "Insert empty data",
+  "time" : {
+    "start" : 1658915680099,
+    "stop" : 1658915681009,
+    "duration" : 910
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e46cd34b8dc1b2ba",
+  "name" : "Soft assertions - custom (as nested step)",
+  "time" : {
+    "start" : 1658915678519,
+    "stop" : 1658915678534,
+    "duration" : 15
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "61beaf0af0fc3550",
+  "name" : "Do not execute! - skipped test",
+  "time" : {
+    "start" : 1658915675344,
+    "stop" : 1658915675344,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "6c068936b8d082f8",
+  "name" : "Wait assertion optional",
+  "time" : {
+    "start" : 1658915677162,
+    "stop" : 1658915717387,
+    "duration" : 40225
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "33ceb859dd7147ed",
+  "name" : "Soft assertions - native",
+  "time" : {
+    "start" : 1658915678550,
+    "stop" : 1658915678565,
+    "duration" : 15
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "766052b3e858c506",
+  "name" : "Wait assertion",
+  "time" : {
+    "start" : 1658915678618,
+    "stop" : 1658915738717,
+    "duration" : 60099
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

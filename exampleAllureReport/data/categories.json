@@ -1,0 +1,85 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Multiple Failures (1 failure)\r\n\torg.opentest4j.AssertionFailedError: Int ==> expected: <2> but was: <1>",
+      "children" : [ {
+        "name" : "Soft assertions - custom",
+        "uid" : "2b0967692d48a0f4",
+        "parentUid" : "a5d6cab0365aa1c9829f891586795f3d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1658915678418,
+          "stop" : 1658915678503,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Soft assertions - custom (as nested step)",
+        "uid" : "e46cd34b8dc1b2ba",
+        "parentUid" : "a5d6cab0365aa1c9829f891586795f3d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1658915678519,
+          "stop" : 1658915678534,
+          "duration" : 15
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Soft assertions - native",
+        "uid" : "33ceb859dd7147ed",
+        "parentUid" : "a5d6cab0365aa1c9829f891586795f3d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1658915678550,
+          "stop" : 1658915678565,
+          "duration" : 15
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a5d6cab0365aa1c9829f891586795f3d"
+    }, {
+      "name" : "[Timeout: 60 sec] time ==> expected: <true> but was: <false>",
+      "children" : [ {
+        "name" : "Wait assertion",
+        "uid" : "766052b3e858c506",
+        "parentUid" : "a7da0c4efc782a211b1b1f7900b5174e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1658915678618,
+          "stop" : 1658915738717,
+          "duration" : 60099
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a7da0c4efc782a211b1b1f7900b5174e"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

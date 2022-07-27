@@ -1,0 +1,174 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "QH-WIN-KSL",
+    "children" : [ {
+      "name" : "16112@QH-WIN-KSL.ForkJoinPool-1-worker-3(18)",
+      "children" : [ {
+        "name" : "Wait assertion optional",
+        "uid" : "6c068936b8d082f8",
+        "parentUid" : "5eca49e8335d80461b5f1ed141f75b12",
+        "status" : "passed",
+        "time" : {
+          "start" : 1658915677162,
+          "stop" : 1658915717387,
+          "duration" : 40225
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5eca49e8335d80461b5f1ed141f75b12"
+    }, {
+      "name" : "16112@QH-WIN-KSL.ForkJoinPool-1-worker-7(20)",
+      "children" : [ {
+        "name" : "Do not execute! - aborted test",
+        "uid" : "c5f09d26959919e9",
+        "parentUid" : "f3ce97a9fa68a2e8feb946fb833ecbd8",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1658915675122,
+          "stop" : 1658915675129,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Wait assertion",
+        "uid" : "766052b3e858c506",
+        "parentUid" : "f3ce97a9fa68a2e8feb946fb833ecbd8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1658915678618,
+          "stop" : 1658915738717,
+          "duration" : 60099
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Soft assertions - custom (as nested step)",
+        "uid" : "e46cd34b8dc1b2ba",
+        "parentUid" : "f3ce97a9fa68a2e8feb946fb833ecbd8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1658915678519,
+          "stop" : 1658915678534,
+          "duration" : 15
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Soft assertions - native",
+        "uid" : "33ceb859dd7147ed",
+        "parentUid" : "f3ce97a9fa68a2e8feb946fb833ecbd8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1658915678550,
+          "stop" : 1658915678565,
+          "duration" : 15
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Do not execute! - skipped test",
+        "uid" : "61beaf0af0fc3550",
+        "parentUid" : "f3ce97a9fa68a2e8feb946fb833ecbd8",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1658915675344,
+          "stop" : 1658915675344,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Soft assertions - custom",
+        "uid" : "2b0967692d48a0f4",
+        "parentUid" : "f3ce97a9fa68a2e8feb946fb833ecbd8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1658915678418,
+          "stop" : 1658915678503,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f3ce97a9fa68a2e8feb946fb833ecbd8"
+    }, {
+      "name" : "16112@QH-WIN-KSL.ForkJoinPool-1-worker-5(19)",
+      "children" : [ {
+        "name" : "Insert empty data",
+        "uid" : "23a570e33d1959d9",
+        "parentUid" : "c983380c83d0cbc814ad5c08d0078544",
+        "status" : "passed",
+        "time" : {
+          "start" : 1658915680099,
+          "stop" : 1658915681009,
+          "duration" : 910
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Insert full data",
+        "uid" : "e46563e0cd9b2722",
+        "parentUid" : "c983380c83d0cbc814ad5c08d0078544",
+        "status" : "passed",
+        "time" : {
+          "start" : 1658915681024,
+          "stop" : 1658915681442,
+          "duration" : 418
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c983380c83d0cbc814ad5c08d0078544"
+    } ],
+    "uid" : "0781d5d6f433265dfa46c9a0d404ed95"
+  } ]
+}

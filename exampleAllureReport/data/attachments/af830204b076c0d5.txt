@@ -1,0 +1,10 @@
+{
+  "reserved": true,
+  "tagId": 1,
+  "properties": {
+    "stringItem": "Some text",
+    "booleanItem": true,
+    "intItem": 15,
+    "floatItem": 10.01
+  }
+}

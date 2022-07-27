@@ -1,0 +1,3 @@
+Authorization: Be***CU
+User-Agent: api-client
+Content-Type: application/json

@@ -1,0 +1,68 @@
+{
+  "uid" : "61beaf0af0fc3550",
+  "name" : "Do not execute! - skipped test",
+  "fullName" : "pl.databucket.api.tests.examples.SkippedTest.skippedTest",
+  "historyId" : "73cd6c454bf4274fcdad5cbfdac35456",
+  "time" : {
+    "start" : 1658915675344,
+    "stop" : 1658915675344,
+    "duration" : 0
+  },
+  "description" : "",
+  "status" : "skipped",
+  "statusMessage" : "for demonstration purposes",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "example"
+  }, {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:pl.databucket.api.tests.examples.SkippedTest]/[method:skippedTest()]"
+  }, {
+    "name" : "host",
+    "value" : "QH-WIN-KSL"
+  }, {
+    "name" : "thread",
+    "value" : "16112@QH-WIN-KSL.ForkJoinPool-1-worker-7(20)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "pl.databucket.api.tests.examples.SkippedTest"
+  }, {
+    "name" : "testClass",
+    "value" : "pl.databucket.api.tests.examples.SkippedTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "skippedTest"
+  }, {
+    "name" : "suite",
+    "value" : "Skipped scenarios"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "example" ]
+  },
+  "source" : "61beaf0af0fc3550.json",
+  "parameterValues" : [ ]
+}
