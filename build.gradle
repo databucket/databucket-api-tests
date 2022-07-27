@@ -1,0 +1,144 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'io.qameta.allure' version '2.9.6'
+    id "org.gradle.test-retry" version "1.4.0"
+}
+
+compileJava { options.encoding = "UTF-8" }
+
+group 'pl.databucket.tests'
+version '1.0'
+
+repositories {
+  mavenCentral()
+}
+
+
+allure {
+    version = "2.17.3"
+}
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+def junit5Version = '5.8.2'
+def allureVersion = '2.17.3'
+def lombokVersion = '1.18.24'
+def jacksonVersion = '2.13.2'
+def slf4jVersion = '1.7.36'
+
+dependencies {
+    testImplementation(platform("org.junit:junit-bom:${junit5Version}"))
+    testImplementation "org.junit.jupiter:junit-jupiter:${junit5Version}"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${junit5Version}"
+    implementation "org.junit.jupiter:junit-jupiter-api:${junit5Version}"
+    testRuntimeOnly "org.slf4j:slf4j-simple:${slf4jVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+    implementation "org.projectlombok:lombok:${lombokVersion}"
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    implementation "com.fasterxml.jackson.core:jackson-databind:2.13.2.2"
+    implementation "com.fasterxml.jackson.core:jackson-annotations:${jacksonVersion}"
+    implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:${jacksonVersion}"
+    implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:${jacksonVersion}"
+    implementation "io.qameta.allure:allure-java-commons:${allureVersion}"
+    testImplementation "io.qameta.allure:allure-junit5:${allureVersion}"
+    implementation 'com.sun.jersey:jersey-client:1.19.4'
+    implementation 'com.google.code.gson:gson:2.9.0'
+}
+
+task beforeTest {
+    doFirst {
+        if (System.getProperty("env") == null)
+            System.setProperty("env", "dev")
+
+        // Read and flatten global configuration
+        ConfigObject conf = new ConfigSlurper(System.getProperty("env")).parse(file('config.groovy').toURI().toURL()) as ConfigObject
+
+        try (FileOutputStream fos = new FileOutputStream("build/test.properties")) {
+            Properties props = new Properties()
+            conf.flatten().each { key, value -> props.setProperty("" + key, "" + value) }
+            props.store(fos, "Initial test configuration")
+        } catch (IOException e) {
+            println "${e.getMessage()}"
+        }
+    }
+}
+
+test {
+    ignoreFailures = true
+    testLogging.showStandardStreams = true
+
+    def threads = 1
+    if (System.getProperty("threads") != null)
+        threads = System.getProperty("threads")
+    else
+        System.setProperty("threads", threads.toString())
+
+    systemProperties = [
+            'junit.jupiter.execution.parallel.enabled'                 : true,
+            'junit.jupiter.execution.parallel.mode.default'            : 'concurrent',
+            'junit.jupiter.execution.parallel.config.strategy'         : 'fixed',
+            'junit.jupiter.execution.parallel.config.fixed.parallelism': threads
+    ]
+
+    useJUnitPlatform {
+        if (System.getProperty("testPattern") != null)
+            filter.includeTestsMatching(System.getProperty("testPattern"))
+
+        if (System.getProperty("includeTags") != null)
+            includeTags(System.getProperty("includeTags").split(","))
+
+        if (System.getProperty("excludeTags") != null)
+            excludeTags(System.getProperty("excludeTags").split(","))
+    }
+
+    def confMaxRetries = 0
+    if (System.getProperty("maxRetries") != null)
+        confMaxRetries = Integer.parseInt(System.getProperty("maxRetries"))
+    System.setProperty("maxRetires", confMaxRetries.toString())
+
+    def confMaxFailures = 20
+    if (System.getProperty("maxFailures") != null)
+        confMaxFailures = Integer.parseInt(System.getProperty("maxFailures"))
+    System.setProperty("maxFailures", confMaxFailures.toString())
+
+    retry {
+        maxRetries = confMaxRetries
+        maxFailures = confMaxFailures
+        failOnPassedAfterRetry = false
+        filter {
+            includeAnnotationClasses.add("*Retryable")
+            excludeAnnotationClasses.add("*NonRetryable")
+        }
+    }
+}
+
+task afterTest {
+    doFirst {
+        final String PROPERTIES_PATH = "build/allure-results/environment.properties"
+        try (FileOutputStream fos = new FileOutputStream(PROPERTIES_PATH)) {
+            Properties props = new Properties()
+            props.setProperty("Environment", System.getProperty("env"))
+            props.setProperty("Threads", System.getProperty("threads"))
+            props.setProperty("Max retries", System.getProperty("maxRetires"))
+            props.setProperty("Max failures", System.getProperty("maxFailures"))
+
+            if (System.getProperty("includeTags") != null)
+                props.setProperty("Include tags", System.getProperty("includeTags"))
+
+            if (System.getProperty("excludeTags") != null)
+                props.setProperty("Exclude tags", System.getProperty("excludeTags"))
+
+            if (System.getProperty("testPattern") != null)
+                props.setProperty("Include patterns", System.getProperty("testPattern"))
+
+            props.store(fos, "Writing properties to output stream")
+        } catch (IOException e) {
+            logger.error(e.getMessage())
+        }
+    }
+}
+
+testClasses.finalizedBy beforeTest
+test.finalizedBy afterTest
